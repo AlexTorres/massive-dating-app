@@ -1,0 +1,648 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3BEBE2BF218442A88E9A25DB /* libPods-ember.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC88C250EB34BF798E9822F /* libPods-ember.a */; };
+		F5A0D0D5191EDC1300138593 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A0D0D4191EDC1300138593 /* Foundation.framework */; };
+		F5A0D0D7191EDC1300138593 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A0D0D6191EDC1300138593 /* CoreGraphics.framework */; };
+		F5A0D0D9191EDC1300138593 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A0D0D8191EDC1300138593 /* UIKit.framework */; };
+		F5A0D0DF191EDC1300138593 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5A0D0DD191EDC1300138593 /* InfoPlist.strings */; };
+		F5A0D0E1191EDC1300138593 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A0D0E0191EDC1300138593 /* main.m */; };
+		F5A0D0E5191EDC1300138593 /* EMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A0D0E4191EDC1300138593 /* EMAppDelegate.m */; };
+		F5A0D0E8191EDC1300138593 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A0D0E6191EDC1300138593 /* Main.storyboard */; };
+		F5A0D0EB191EDC1300138593 /* EMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A0D0EA191EDC1300138593 /* EMViewController.m */; };
+		F5A0D0ED191EDC1300138593 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A0D0EC191EDC1300138593 /* Images.xcassets */; };
+		F5A0D0F4191EDC1300138593 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A0D0F3191EDC1300138593 /* XCTest.framework */; };
+		F5A0D0F5191EDC1300138593 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A0D0D4191EDC1300138593 /* Foundation.framework */; };
+		F5A0D0F6191EDC1300138593 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A0D0D8191EDC1300138593 /* UIKit.framework */; };
+		F5A0D0FE191EDC1300138593 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5A0D0FC191EDC1300138593 /* InfoPlist.strings */; };
+		F5A0D100191EDC1300138593 /* emberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A0D0FF191EDC1300138593 /* emberTests.m */; };
+		F5B5E1EA193001090093DF83 /* EMConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B5E1E9193001090093DF83 /* EMConstants.m */; };
+		F5CC5783191FE25D001CD124 /* NSException+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CC5782191FE25D001CD124 /* NSException+Utils.m */; };
+		F5CC578C191FF068001CD124 /* EMService.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CC578B191FF068001CD124 /* EMService.m */; };
+		F5CC578F191FF11A001CD124 /* EMLoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CC578E191FF11A001CD124 /* EMLoginService.m */; };
+		F5CC57921920005D001CD124 /* EMServiceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CC57911920005D001CD124 /* EMServiceModel.m */; };
+		F5CC5798192006E1001CD124 /* EMLoginModelRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CC5797192006E1001CD124 /* EMLoginModelRequest.m */; };
+		F5CC579B19201DAD001CD124 /* EMLoginModelResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CC579A19201DAD001CD124 /* EMLoginModelResponse.m */; };
+		F5FAC54C191F12A30036BCB4 /* EMLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FAC54B191F12A30036BCB4 /* EMLoginManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5A0D0F7191EDC1300138593 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5A0D0C9191EDC1300138593 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5A0D0D0191EDC1300138593;
+			remoteInfo = ember;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5CC88C250EB34BF798E9822F /* libPods-ember.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ember.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F193FBB0D9C54FD8A49FFBD0 /* Pods-ember.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ember.xcconfig"; path = "Pods/Pods-ember.xcconfig"; sourceTree = "<group>"; };
+		F5A0D0D1191EDC1300138593 /* ember.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ember.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5A0D0D4191EDC1300138593 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F5A0D0D6191EDC1300138593 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F5A0D0D8191EDC1300138593 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F5A0D0DC191EDC1300138593 /* ember-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ember-Info.plist"; sourceTree = "<group>"; };
+		F5A0D0DE191EDC1300138593 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F5A0D0E0191EDC1300138593 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F5A0D0E2191EDC1300138593 /* ember-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ember-Prefix.pch"; sourceTree = "<group>"; };
+		F5A0D0E3191EDC1300138593 /* EMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EMAppDelegate.h; sourceTree = "<group>"; };
+		F5A0D0E4191EDC1300138593 /* EMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EMAppDelegate.m; sourceTree = "<group>"; };
+		F5A0D0E7191EDC1300138593 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5A0D0E9191EDC1300138593 /* EMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EMViewController.h; sourceTree = "<group>"; };
+		F5A0D0EA191EDC1300138593 /* EMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EMViewController.m; sourceTree = "<group>"; };
+		F5A0D0EC191EDC1300138593 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F5A0D0F2191EDC1300138593 /* emberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = emberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5A0D0F3191EDC1300138593 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F5A0D0FB191EDC1300138593 /* emberTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "emberTests-Info.plist"; sourceTree = "<group>"; };
+		F5A0D0FD191EDC1300138593 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F5A0D0FF191EDC1300138593 /* emberTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = emberTests.m; sourceTree = "<group>"; };
+		F5B5E1E8193001090093DF83 /* EMConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMConstants.h; sourceTree = "<group>"; };
+		F5B5E1E9193001090093DF83 /* EMConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMConstants.m; sourceTree = "<group>"; };
+		F5CC5781191FE25D001CD124 /* NSException+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSException+Utils.h"; path = "ember/Utils/NSException+Utils.h"; sourceTree = "<group>"; };
+		F5CC5782191FE25D001CD124 /* NSException+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSException+Utils.m"; path = "ember/Utils/NSException+Utils.m"; sourceTree = "<group>"; };
+		F5CC578A191FF068001CD124 /* EMService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMService.h; sourceTree = "<group>"; };
+		F5CC578B191FF068001CD124 /* EMService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMService.m; sourceTree = "<group>"; };
+		F5CC578D191FF11A001CD124 /* EMLoginService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMLoginService.h; sourceTree = "<group>"; };
+		F5CC578E191FF11A001CD124 /* EMLoginService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMLoginService.m; sourceTree = "<group>"; };
+		F5CC57901920005D001CD124 /* EMServiceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMServiceModel.h; sourceTree = "<group>"; };
+		F5CC57911920005D001CD124 /* EMServiceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMServiceModel.m; sourceTree = "<group>"; };
+		F5CC5796192006E1001CD124 /* EMLoginModelRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMLoginModelRequest.h; sourceTree = "<group>"; };
+		F5CC5797192006E1001CD124 /* EMLoginModelRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMLoginModelRequest.m; sourceTree = "<group>"; };
+		F5CC579919201DAD001CD124 /* EMLoginModelResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMLoginModelResponse.h; sourceTree = "<group>"; };
+		F5CC579A19201DAD001CD124 /* EMLoginModelResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMLoginModelResponse.m; sourceTree = "<group>"; };
+		F5FAC54A191F12A30036BCB4 /* EMLoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMLoginManager.h; sourceTree = "<group>"; };
+		F5FAC54B191F12A30036BCB4 /* EMLoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMLoginManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5A0D0CE191EDC1300138593 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5A0D0D7191EDC1300138593 /* CoreGraphics.framework in Frameworks */,
+				F5A0D0D9191EDC1300138593 /* UIKit.framework in Frameworks */,
+				F5A0D0D5191EDC1300138593 /* Foundation.framework in Frameworks */,
+				3BEBE2BF218442A88E9A25DB /* libPods-ember.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5A0D0EF191EDC1300138593 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5A0D0F4191EDC1300138593 /* XCTest.framework in Frameworks */,
+				F5A0D0F6191EDC1300138593 /* UIKit.framework in Frameworks */,
+				F5A0D0F5191EDC1300138593 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5A0D0C8191EDC1300138593 = {
+			isa = PBXGroup;
+			children = (
+				F5CC5788191FF068001CD124 /* Common */,
+				F5CC5784191FECE7001CD124 /* Services */,
+				F5CC577D191FDFC7001CD124 /* Utils */,
+				F5A0D0DA191EDC1300138593 /* ember */,
+				F5A0D0F9191EDC1300138593 /* emberTests */,
+				F5A0D0D3191EDC1300138593 /* Frameworks */,
+				F5A0D0D2191EDC1300138593 /* Products */,
+				F193FBB0D9C54FD8A49FFBD0 /* Pods-ember.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		F5A0D0D2191EDC1300138593 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5A0D0D1191EDC1300138593 /* ember.app */,
+				F5A0D0F2191EDC1300138593 /* emberTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5A0D0D3191EDC1300138593 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5A0D0D4191EDC1300138593 /* Foundation.framework */,
+				F5A0D0D6191EDC1300138593 /* CoreGraphics.framework */,
+				F5A0D0D8191EDC1300138593 /* UIKit.framework */,
+				F5A0D0F3191EDC1300138593 /* XCTest.framework */,
+				5CC88C250EB34BF798E9822F /* libPods-ember.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5A0D0DA191EDC1300138593 /* ember */ = {
+			isa = PBXGroup;
+			children = (
+				F5FAC547191F102D0036BCB4 /* Managers */,
+				F5FAC548191F102D0036BCB4 /* Model */,
+				F5FAC549191F102D0036BCB4 /* ViewControllers */,
+				F5A0D0E3191EDC1300138593 /* EMAppDelegate.h */,
+				F5A0D0E4191EDC1300138593 /* EMAppDelegate.m */,
+				F5A0D0E6191EDC1300138593 /* Main.storyboard */,
+				F5A0D0E9191EDC1300138593 /* EMViewController.h */,
+				F5A0D0EA191EDC1300138593 /* EMViewController.m */,
+				F5A0D0EC191EDC1300138593 /* Images.xcassets */,
+				F5A0D0DB191EDC1300138593 /* Supporting Files */,
+			);
+			path = ember;
+			sourceTree = "<group>";
+		};
+		F5A0D0DB191EDC1300138593 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5A0D0DC191EDC1300138593 /* ember-Info.plist */,
+				F5A0D0DD191EDC1300138593 /* InfoPlist.strings */,
+				F5A0D0E0191EDC1300138593 /* main.m */,
+				F5A0D0E2191EDC1300138593 /* ember-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F5A0D0F9191EDC1300138593 /* emberTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5A0D0FF191EDC1300138593 /* emberTests.m */,
+				F5A0D0FA191EDC1300138593 /* Supporting Files */,
+			);
+			path = emberTests;
+			sourceTree = "<group>";
+		};
+		F5A0D0FA191EDC1300138593 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5A0D0FB191EDC1300138593 /* emberTests-Info.plist */,
+				F5A0D0FC191EDC1300138593 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F5CC577D191FDFC7001CD124 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F5CC5781191FE25D001CD124 /* NSException+Utils.h */,
+				F5CC5782191FE25D001CD124 /* NSException+Utils.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		F5CC5784191FECE7001CD124 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F5CC578D191FF11A001CD124 /* EMLoginService.h */,
+				F5CC578E191FF11A001CD124 /* EMLoginService.m */,
+			);
+			name = Services;
+			path = ember/Services;
+			sourceTree = "<group>";
+		};
+		F5CC5788191FF068001CD124 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F5CC5789191FF068001CD124 /* Services */,
+				F5B5E1E8193001090093DF83 /* EMConstants.h */,
+				F5B5E1E9193001090093DF83 /* EMConstants.m */,
+			);
+			name = Common;
+			path = ember/Common;
+			sourceTree = "<group>";
+		};
+		F5CC5789191FF068001CD124 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F5CC578A191FF068001CD124 /* EMService.h */,
+				F5CC578B191FF068001CD124 /* EMService.m */,
+				F5CC57901920005D001CD124 /* EMServiceModel.h */,
+				F5CC57911920005D001CD124 /* EMServiceModel.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F5CC57931920024B001CD124 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F5CC57941920024B001CD124 /* Request */,
+				F5CC57951920024B001CD124 /* Response */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F5CC57941920024B001CD124 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				F5CC5796192006E1001CD124 /* EMLoginModelRequest.h */,
+				F5CC5797192006E1001CD124 /* EMLoginModelRequest.m */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		F5CC57951920024B001CD124 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				F5CC579919201DAD001CD124 /* EMLoginModelResponse.h */,
+				F5CC579A19201DAD001CD124 /* EMLoginModelResponse.m */,
+			);
+			name = Response;
+			path = Responce;
+			sourceTree = "<group>";
+		};
+		F5FAC547191F102D0036BCB4 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F5FAC54A191F12A30036BCB4 /* EMLoginManager.h */,
+				F5FAC54B191F12A30036BCB4 /* EMLoginManager.m */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F5FAC548191F102D0036BCB4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5CC57931920024B001CD124 /* Login */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F5FAC549191F102D0036BCB4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5A0D0D0191EDC1300138593 /* ember */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5A0D103191EDC1300138593 /* Build configuration list for PBXNativeTarget "ember" */;
+			buildPhases = (
+				D4062BD199064D25931D81F1 /* Check Pods Manifest.lock */,
+				F5A0D0CD191EDC1300138593 /* Sources */,
+				F5A0D0CE191EDC1300138593 /* Frameworks */,
+				F5A0D0CF191EDC1300138593 /* Resources */,
+				F33749ED14A74A8B8789CD4C /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ember;
+			productName = ember;
+			productReference = F5A0D0D1191EDC1300138593 /* ember.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5A0D0F1191EDC1300138593 /* emberTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5A0D106191EDC1300138593 /* Build configuration list for PBXNativeTarget "emberTests" */;
+			buildPhases = (
+				F5A0D0EE191EDC1300138593 /* Sources */,
+				F5A0D0EF191EDC1300138593 /* Frameworks */,
+				F5A0D0F0191EDC1300138593 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5A0D0F8191EDC1300138593 /* PBXTargetDependency */,
+			);
+			name = emberTests;
+			productName = emberTests;
+			productReference = F5A0D0F2191EDC1300138593 /* emberTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5A0D0C9191EDC1300138593 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = EM;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = ember;
+				TargetAttributes = {
+					F5A0D0F1191EDC1300138593 = {
+						TestTargetID = F5A0D0D0191EDC1300138593;
+					};
+				};
+			};
+			buildConfigurationList = F5A0D0CC191EDC1300138593 /* Build configuration list for PBXProject "ember" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5A0D0C8191EDC1300138593;
+			productRefGroup = F5A0D0D2191EDC1300138593 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5A0D0D0191EDC1300138593 /* ember */,
+				F5A0D0F1191EDC1300138593 /* emberTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5A0D0CF191EDC1300138593 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5A0D0ED191EDC1300138593 /* Images.xcassets in Resources */,
+				F5A0D0DF191EDC1300138593 /* InfoPlist.strings in Resources */,
+				F5A0D0E8191EDC1300138593 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5A0D0F0191EDC1300138593 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5A0D0FE191EDC1300138593 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D4062BD199064D25931D81F1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F33749ED14A74A8B8789CD4C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-ember-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5A0D0CD191EDC1300138593 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5A0D0EB191EDC1300138593 /* EMViewController.m in Sources */,
+				F5CC5783191FE25D001CD124 /* NSException+Utils.m in Sources */,
+				F5FAC54C191F12A30036BCB4 /* EMLoginManager.m in Sources */,
+				F5CC578C191FF068001CD124 /* EMService.m in Sources */,
+				F5CC5798192006E1001CD124 /* EMLoginModelRequest.m in Sources */,
+				F5B5E1EA193001090093DF83 /* EMConstants.m in Sources */,
+				F5A0D0E5191EDC1300138593 /* EMAppDelegate.m in Sources */,
+				F5A0D0E1191EDC1300138593 /* main.m in Sources */,
+				F5CC578F191FF11A001CD124 /* EMLoginService.m in Sources */,
+				F5CC579B19201DAD001CD124 /* EMLoginModelResponse.m in Sources */,
+				F5CC57921920005D001CD124 /* EMServiceModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5A0D0EE191EDC1300138593 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5A0D100191EDC1300138593 /* emberTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5A0D0F8191EDC1300138593 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5A0D0D0191EDC1300138593 /* ember */;
+			targetProxy = F5A0D0F7191EDC1300138593 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F5A0D0DD191EDC1300138593 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5A0D0DE191EDC1300138593 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F5A0D0E6191EDC1300138593 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5A0D0E7191EDC1300138593 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5A0D0FC191EDC1300138593 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5A0D0FD191EDC1300138593 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5A0D101191EDC1300138593 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F5A0D102191EDC1300138593 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5A0D104191EDC1300138593 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F193FBB0D9C54FD8A49FFBD0 /* Pods-ember.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ember/ember-Prefix.pch";
+				INFOPLIST_FILE = "ember/ember-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F5A0D105191EDC1300138593 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F193FBB0D9C54FD8A49FFBD0 /* Pods-ember.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ember/ember-Prefix.pch";
+				INFOPLIST_FILE = "ember/ember-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F5A0D107191EDC1300138593 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ember.app/ember";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ember/ember-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "emberTests/emberTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F5A0D108191EDC1300138593 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ember.app/ember";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ember/ember-Prefix.pch";
+				INFOPLIST_FILE = "emberTests/emberTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5A0D0CC191EDC1300138593 /* Build configuration list for PBXProject "ember" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5A0D101191EDC1300138593 /* Debug */,
+				F5A0D102191EDC1300138593 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5A0D103191EDC1300138593 /* Build configuration list for PBXNativeTarget "ember" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5A0D104191EDC1300138593 /* Debug */,
+				F5A0D105191EDC1300138593 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5A0D106191EDC1300138593 /* Build configuration list for PBXNativeTarget "emberTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5A0D107191EDC1300138593 /* Debug */,
+				F5A0D108191EDC1300138593 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5A0D0C9191EDC1300138593 /* Project object */;
+}

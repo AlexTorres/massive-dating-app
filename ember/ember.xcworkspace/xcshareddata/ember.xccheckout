@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7B5178D9-1E2B-4FC5-A4D1-A8C9AC0CE4F2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ember</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7C65D38D-D920-46E1-A202-61C69D8CAE8C</key>
+		<string>https://github.com/AlexTorres/massive-dating-app.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ember/ember.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7C65D38D-D920-46E1-A202-61C69D8CAE8C</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/AlexTorres/massive-dating-app.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7C65D38D-D920-46E1-A202-61C69D8CAE8C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7C65D38D-D920-46E1-A202-61C69D8CAE8C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>massive-dating-app</string>
+		</dict>
+	</array>
+</dict>
+</plist>
