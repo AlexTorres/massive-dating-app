@@ -13,8 +13,8 @@
 {
 	RKObjectMapping *mapping = [RKObjectMapping requestMapping];
 	NSDictionary *mappingDict = @{
-                                  @"UDID" : @"UDID",
-                                  @"userPhone" : @"UserPhone"
+                                  @"phone" : @"phone",
+                                  @"password" : @"password"
                                   };
     
 	[mapping addAttributeMappingsFromDictionary:mappingDict];

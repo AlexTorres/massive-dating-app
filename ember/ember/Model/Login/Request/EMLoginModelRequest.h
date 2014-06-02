@@ -9,7 +9,7 @@
 #import "EMServiceModel.h"
 
 @interface EMLoginModelRequest : EMServiceModel
-@property (nonatomic, copy) NSString *UDID;
-@property (nonatomic, copy) NSString *userPhone;
+@property (nonatomic, copy) NSString *phone;
+@property (nonatomic, copy) NSString *password;
 
 @end

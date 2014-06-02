@@ -10,6 +10,7 @@
 
 @interface EMLoginManager : NSObject
 
-- (NSString *)getCodeForMSISDN:(NSString *)MSISDN
-       andDeviceNumber:(NSString *)pincode;
++ (instancetype)sharedInstance;
+- (NSString *)codeForPhone:(NSString *)phone
+       withPassword:(NSString *)password;
 @end

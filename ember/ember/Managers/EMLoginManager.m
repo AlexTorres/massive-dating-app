@@ -7,8 +7,10 @@
 //
 
 #import "EMLoginManager.h"
+#import "EMLoginService.h"
 
 @implementation EMLoginManager
+
 
 + (instancetype)sharedInstance
 {
@@ -25,14 +27,20 @@
 	@throw [NSException singletonExceptionWithClass:[self class]];
 }
 
-- (NSString*)getCodeForPhoneNumber
-{
-    return @"";
-}
-- (void)signWithMSISDN:(NSString *)MSISDN
-             andDeviceNumber:(NSString *)pincode
-{
 
+- (NSString *)codeForPhone:(NSString *)phone
+                 withPassword:(NSString *)password
+{
+    
+    [[EMLoginService sharedInstance] userSingUpPhone:phone
+                                        withPassword:password
+                                             success:^(id response) {
+                                                 NSLog(@"%@",response);
+        
+    } failure:^(NSError *error) {
+        
+    }];
+    return @"gato";
 }
 
 #pragma mark - Private methods

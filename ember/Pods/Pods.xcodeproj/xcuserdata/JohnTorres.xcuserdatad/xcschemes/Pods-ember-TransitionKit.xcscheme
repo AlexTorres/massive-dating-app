@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4B54648D1E3C424786277A93"
+               BlueprintIdentifier = "F2BEFA50597F4DE2A55775F5"
                BuildableName = "libPods-ember-TransitionKit.a"
                BlueprintName = "Pods-ember-TransitionKit"
                ReferencedContainer = "container:Pods.xcodeproj">

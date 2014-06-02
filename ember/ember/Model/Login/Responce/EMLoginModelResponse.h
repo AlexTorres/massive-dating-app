@@ -9,5 +9,6 @@
 #import "EMServiceModel.h"
 
 @interface EMLoginModelResponse : EMServiceModel
-@property (nonatomic, copy) NSString *userCode;
+@property (nonatomic, copy) NSString *accessToken;
+@property (nonatomic, assign) BOOL isConfirmed;
 @end

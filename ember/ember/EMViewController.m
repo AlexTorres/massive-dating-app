@@ -7,6 +7,7 @@
 //
 
 #import "EMViewController.h"
+#import "EMLoginManager.h"
 
 @interface EMViewController ()
 
@@ -17,6 +18,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    EMLoginManager * loginManager = [EMLoginManager sharedInstance];
+    
+    NSString * dummy = [loginManager codeForPhone:@"573005548744"
+                                     withPassword:@"gatovolador"];
+    NSLog(@"%@",dummy);
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

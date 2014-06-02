@@ -13,6 +13,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [self setupLogging];
+    [self setupServices];
     return YES;
 }
 							
@@ -41,6 +43,47 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)setupLogging
+{
+	[DDLog addLogger:[DDASLLogger sharedInstance]];
+	[DDLog addLogger:[DDTTYLogger sharedInstance]];
+    
+#ifdef DEBUG
+	RKLogConfigureByName("RestKit/Network", RKLogLevelTrace);
+	RKLogConfigureByName("RestKit/ObjectMapping", RKLogLevelInfo);
+#else
+	RKLogConfigureByName("RestKit", RKLogLevelError);
+	RKLogConfigureByName("RestKit/ObjectMapping", RKLogLevelError);
+#endif
+}
+- (void)setupServices
+{
+    NSString *baseServerUrl = MTBaseServerUrl();
+    
+    RKObjectManager* objectManager = [RKObjectManager managerWithBaseURL:[NSURL URLWithString:baseServerUrl]];
+
+    objectManager.HTTPClient.allowsInvalidSSLCertificate = YES;
+    //[objectManager.HTTPClient setDefaultHeader:@"Content-Encoding" value:@"gzip"];
+    
+    [RKObjectManager setSharedManager:objectManager];
+    
+	// Add common http header fields, for example:
+	//DDLogInfo(@"Setting header '%@' with value '%@' for all requests", kAPIsHeaderFieldName, kAPIsHeaderFieldValue);
+	//[self.objectManager.HTTPClient setDefaultHeader:kAPIsHeaderFieldName value:kAPIsHeaderFieldValue];
+    
+	// We should always get JSONs from the APIs. If some of them don't return application/json,
+	// force them to still be deserialized as JSON.
+	[RKMIMETypeSerialization registerClass:[RKNSJSONSerialization class] forMIMEType:@"text/html"];
+	[RKMIMETypeSerialization registerClass:[RKNSJSONSerialization class] forMIMEType:@"text/plain"];
+    
+	[RKObjectMapping class]; // Called so that RKObjectMapping initializes, as it adds a valueTransformer for date at index 0, and we want ours to be the one at index 0
+    RKCompoundValueTransformer *defaultValueTransformer = [RKValueTransformer defaultValueTransformer];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+	dateFormatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";
+    [defaultValueTransformer insertValueTransformer:dateFormatter atIndex:0];
+
 }
 
 @end

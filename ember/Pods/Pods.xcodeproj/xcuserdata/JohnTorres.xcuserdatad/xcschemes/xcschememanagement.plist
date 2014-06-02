@@ -9,6 +9,21 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-ember-CocoaLumberjack.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-ember-ISO8601DateFormatterValueTransformer.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-ember-RKValueTransformers.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-ember-RestKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,27 +47,42 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4B54648D1E3C424786277A93</key>
+		<key>0B55D0849C9D4F5DB8A11F2F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>76579A14DC6A4D729713A226</key>
+		<key>22E993D11C694E69A2AD916E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BD68CC7524184152BA25941B</key>
+		<key>4F92FED81CAE4C278F214DE0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F4B36E3FAAE141789E61C068</key>
+		<key>5EF2C3CE1F524AC8846EA736</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F8BECBA0FCE04FA39E295567</key>
+		<key>82C79BFA632540F5B58C613C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>98E2E5AB4ABA4C89931CA58A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F2BEFA50597F4DE2A55775F5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FF02BF1177084F679C0BAC40</key>
 		<dict>
 			<key>primary</key>
 			<true/>

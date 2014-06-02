@@ -10,11 +10,12 @@
 
 @implementation EMLoginModelResponse
 
-+ (RKMapping *)requestMapping
++ (RKMapping *)responseMapping
 {
 	RKObjectMapping *mapping = [RKObjectMapping requestMapping];
 	NSDictionary *mappingDict = @{
-                                  @"UserCode" : @"userCode"
+                                  @"access_token" : @"accessToken",
+                                  @"is_confirmed" : @"isConfirmed"
                                   };
     
 	[mapping addAttributeMappingsFromDictionary:mappingDict];

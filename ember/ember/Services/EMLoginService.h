@@ -9,7 +9,11 @@
 #import "EMService.h"
 
 @interface EMLoginService : EMService
-- (void) userSingUpPhone:(NSString *)phone withPassword:(NSString *)password success:(EMServiceSuccessBlock)successBlock
-                 failure:(EMServiceSuccessBlock)failureBlock;
++ (instancetype)sharedInstance;
+
+- (void) userSingUpPhone:(NSString *)phone
+            withPassword:(NSString *)password
+                 success:(EMServiceSuccessBlock)successBlock
+                 failure:(EMServiceFailureBlock)failureBlock;
 
 @end
