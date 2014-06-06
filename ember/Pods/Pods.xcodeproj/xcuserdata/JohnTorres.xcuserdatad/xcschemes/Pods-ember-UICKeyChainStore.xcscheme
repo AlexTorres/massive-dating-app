@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7B049E89A21F4E6BAA6E6014"
-               BuildableName = "libPods-ember-AFNetworking.a"
-               BlueprintName = "Pods-ember-AFNetworking"
+               BlueprintIdentifier = "AF588E76C1554B33BAFBEBD8"
+               BuildableName = "libPods-ember-UICKeyChainStore.a"
+               BlueprintName = "Pods-ember-UICKeyChainStore"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

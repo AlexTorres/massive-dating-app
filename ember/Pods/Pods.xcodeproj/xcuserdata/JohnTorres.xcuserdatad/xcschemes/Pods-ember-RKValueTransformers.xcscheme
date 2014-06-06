@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FF02BF1177084F679C0BAC40"
+               BlueprintIdentifier = "FB47F5E612D54483997C3AEC"
                BuildableName = "libPods-ember-RKValueTransformers.a"
                BlueprintName = "Pods-ember-RKValueTransformers"
                ReferencedContainer = "container:Pods.xcodeproj">

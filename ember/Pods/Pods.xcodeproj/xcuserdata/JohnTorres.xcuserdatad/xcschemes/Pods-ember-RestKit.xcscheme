@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4F92FED81CAE4C278F214DE0"
+               BlueprintIdentifier = "A6B6121069054803A5AAD245"
                BuildableName = "libPods-ember-RestKit.a"
                BlueprintName = "Pods-ember-RestKit"
                ReferencedContainer = "container:Pods.xcodeproj">

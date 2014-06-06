@@ -39,6 +39,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-ember-UICKeyChainStore.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-ember.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,42 +52,47 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0B55D0849C9D4F5DB8A11F2F</key>
+		<key>10FD043D44004BD181F01A34</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>22E993D11C694E69A2AD916E</key>
+		<key>1AA8C2A28E604F958D17A2A0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4F92FED81CAE4C278F214DE0</key>
+		<key>4A093EFD2EA84BDE83F86AF4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5EF2C3CE1F524AC8846EA736</key>
+		<key>7B049E89A21F4E6BAA6E6014</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>82C79BFA632540F5B58C613C</key>
+		<key>A6B6121069054803A5AAD245</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>98E2E5AB4ABA4C89931CA58A</key>
+		<key>AF588E76C1554B33BAFBEBD8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F2BEFA50597F4DE2A55775F5</key>
+		<key>BA89F56027144B378589DB05</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FF02BF1177084F679C0BAC40</key>
+		<key>C2A73FC1CB2E4A84B76120EF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FB47F5E612D54483997C3AEC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

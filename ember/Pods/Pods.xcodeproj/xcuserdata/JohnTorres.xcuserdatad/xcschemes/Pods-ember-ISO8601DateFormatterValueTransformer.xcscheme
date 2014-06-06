@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "98E2E5AB4ABA4C89931CA58A"
+               BlueprintIdentifier = "C2A73FC1CB2E4A84B76120EF"
                BuildableName = "libPods-ember-ISO8601DateFormatterValueTransformer.a"
                BlueprintName = "Pods-ember-ISO8601DateFormatterValueTransformer"
                ReferencedContainer = "container:Pods.xcodeproj">

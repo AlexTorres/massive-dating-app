@@ -18,10 +18,15 @@
     #import <RestKit.h>
     #import <DDASLLogger.h>
     #import <DDTTYLogger.h>
+    #import <UICKeyChainStore.h>
     #import "DDLog.h"
 
 // Utils (categories)
     #import "NSException+Utils.h"
+    #import "NSData+Utils.h"
+    #import "NSUserDefaults+Utils.h"
+    #import "NSString+Utils.h"
+    #import "EMMiscUtils.h"
 // Constants
     #import "EMConstants.h"
 #endif

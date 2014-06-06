@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3BEBE2BF218442A88E9A25DB /* libPods-ember.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC88C250EB34BF798E9822F /* libPods-ember.a */; };
+		F520ABC81941207200FA0E86 /* EMLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F520ABC71941207200FA0E86 /* EMLoginViewController.swift */; };
+		F520ABCB1941243700FA0E86 /* EMLocalDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F520ABCA1941243700FA0E86 /* EMLocalDataManager.m */; };
+		F520ABDE1941376A00FA0E86 /* NSData+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = F520ABD71941376A00FA0E86 /* NSData+Utils.m */; };
+		F520ABDF1941376A00FA0E86 /* NSException+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = F520ABD91941376A00FA0E86 /* NSException+Utils.m */; };
+		F520ABE01941376A00FA0E86 /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = F520ABDB1941376A00FA0E86 /* NSString+Utils.m */; };
+		F520ABE11941376A00FA0E86 /* NSUserDefaults+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = F520ABDD1941376A00FA0E86 /* NSUserDefaults+Utils.m */; };
+		F595A31B1941602C00D4BE03 /* EMMiscUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F595A31A1941602C00D4BE03 /* EMMiscUtils.m */; };
 		F5A0D0D5191EDC1300138593 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A0D0D4191EDC1300138593 /* Foundation.framework */; };
 		F5A0D0D7191EDC1300138593 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A0D0D6191EDC1300138593 /* CoreGraphics.framework */; };
 		F5A0D0D9191EDC1300138593 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A0D0D8191EDC1300138593 /* UIKit.framework */; };
@@ -23,7 +30,6 @@
 		F5A0D0FE191EDC1300138593 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5A0D0FC191EDC1300138593 /* InfoPlist.strings */; };
 		F5A0D100191EDC1300138593 /* emberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A0D0FF191EDC1300138593 /* emberTests.m */; };
 		F5B5E1EA193001090093DF83 /* EMConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B5E1E9193001090093DF83 /* EMConstants.m */; };
-		F5CC5783191FE25D001CD124 /* NSException+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CC5782191FE25D001CD124 /* NSException+Utils.m */; };
 		F5CC578C191FF068001CD124 /* EMService.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CC578B191FF068001CD124 /* EMService.m */; };
 		F5CC578F191FF11A001CD124 /* EMLoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CC578E191FF11A001CD124 /* EMLoginService.m */; };
 		F5CC57921920005D001CD124 /* EMServiceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CC57911920005D001CD124 /* EMServiceModel.m */; };
@@ -45,6 +51,20 @@
 /* Begin PBXFileReference section */
 		5CC88C250EB34BF798E9822F /* libPods-ember.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ember.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F193FBB0D9C54FD8A49FFBD0 /* Pods-ember.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ember.xcconfig"; path = "Pods/Pods-ember.xcconfig"; sourceTree = "<group>"; };
+		F520ABC61941207100FA0E86 /* ember-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ember-Bridging-Header.h"; sourceTree = "<group>"; };
+		F520ABC71941207200FA0E86 /* EMLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMLoginViewController.swift; sourceTree = "<group>"; };
+		F520ABC91941243700FA0E86 /* EMLocalDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMLocalDataManager.h; sourceTree = "<group>"; };
+		F520ABCA1941243700FA0E86 /* EMLocalDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMLocalDataManager.m; sourceTree = "<group>"; };
+		F520ABD61941376A00FA0E86 /* NSData+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Utils.h"; sourceTree = "<group>"; };
+		F520ABD71941376A00FA0E86 /* NSData+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Utils.m"; sourceTree = "<group>"; };
+		F520ABD81941376A00FA0E86 /* NSException+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSException+Utils.h"; sourceTree = "<group>"; };
+		F520ABD91941376A00FA0E86 /* NSException+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSException+Utils.m"; sourceTree = "<group>"; };
+		F520ABDA1941376A00FA0E86 /* NSString+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utils.h"; sourceTree = "<group>"; };
+		F520ABDB1941376A00FA0E86 /* NSString+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utils.m"; sourceTree = "<group>"; };
+		F520ABDC1941376A00FA0E86 /* NSUserDefaults+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+Utils.h"; sourceTree = "<group>"; };
+		F520ABDD1941376A00FA0E86 /* NSUserDefaults+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+Utils.m"; sourceTree = "<group>"; };
+		F595A3191941602C00D4BE03 /* EMMiscUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMiscUtils.h; sourceTree = "<group>"; };
+		F595A31A1941602C00D4BE03 /* EMMiscUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMiscUtils.m; sourceTree = "<group>"; };
 		F5A0D0D1191EDC1300138593 /* ember.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ember.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A0D0D4191EDC1300138593 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F5A0D0D6191EDC1300138593 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -66,8 +86,6 @@
 		F5A0D0FF191EDC1300138593 /* emberTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = emberTests.m; sourceTree = "<group>"; };
 		F5B5E1E8193001090093DF83 /* EMConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMConstants.h; sourceTree = "<group>"; };
 		F5B5E1E9193001090093DF83 /* EMConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMConstants.m; sourceTree = "<group>"; };
-		F5CC5781191FE25D001CD124 /* NSException+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSException+Utils.h"; path = "ember/Utils/NSException+Utils.h"; sourceTree = "<group>"; };
-		F5CC5782191FE25D001CD124 /* NSException+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSException+Utils.m"; path = "ember/Utils/NSException+Utils.m"; sourceTree = "<group>"; };
 		F5CC578A191FF068001CD124 /* EMService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMService.h; sourceTree = "<group>"; };
 		F5CC578B191FF068001CD124 /* EMService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMService.m; sourceTree = "<group>"; };
 		F5CC578D191FF11A001CD124 /* EMLoginService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMLoginService.h; sourceTree = "<group>"; };
@@ -107,12 +125,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F520ABC51941201B00FA0E86 /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F520ABC71941207200FA0E86 /* EMLoginViewController.swift */,
+				F520ABC61941207100FA0E86 /* ember-Bridging-Header.h */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		F520ABD51941376A00FA0E86 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F520ABD61941376A00FA0E86 /* NSData+Utils.h */,
+				F520ABD71941376A00FA0E86 /* NSData+Utils.m */,
+				F520ABD81941376A00FA0E86 /* NSException+Utils.h */,
+				F520ABD91941376A00FA0E86 /* NSException+Utils.m */,
+				F520ABDA1941376A00FA0E86 /* NSString+Utils.h */,
+				F520ABDB1941376A00FA0E86 /* NSString+Utils.m */,
+				F520ABDC1941376A00FA0E86 /* NSUserDefaults+Utils.h */,
+				F520ABDD1941376A00FA0E86 /* NSUserDefaults+Utils.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		F5A0D0C8191EDC1300138593 = {
 			isa = PBXGroup;
 			children = (
-				F5CC5788191FF068001CD124 /* Common */,
-				F5CC5784191FECE7001CD124 /* Services */,
-				F5CC577D191FDFC7001CD124 /* Utils */,
 				F5A0D0DA191EDC1300138593 /* ember */,
 				F5A0D0F9191EDC1300138593 /* emberTests */,
 				F5A0D0D3191EDC1300138593 /* Frameworks */,
@@ -145,6 +184,9 @@
 		F5A0D0DA191EDC1300138593 /* ember */ = {
 			isa = PBXGroup;
 			children = (
+				F520ABD51941376A00FA0E86 /* Utils */,
+				F5CC5788191FF068001CD124 /* Common */,
+				F5CC5784191FECE7001CD124 /* Services */,
 				F5FAC547191F102D0036BCB4 /* Managers */,
 				F5FAC548191F102D0036BCB4 /* Model */,
 				F5FAC549191F102D0036BCB4 /* ViewControllers */,
@@ -188,34 +230,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F5CC577D191FDFC7001CD124 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				F5CC5781191FE25D001CD124 /* NSException+Utils.h */,
-				F5CC5782191FE25D001CD124 /* NSException+Utils.m */,
-			);
-			name = Utils;
-			sourceTree = "<group>";
-		};
 		F5CC5784191FECE7001CD124 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				F5CC578D191FF11A001CD124 /* EMLoginService.h */,
 				F5CC578E191FF11A001CD124 /* EMLoginService.m */,
 			);
-			name = Services;
-			path = ember/Services;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		F5CC5788191FF068001CD124 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				F595A3191941602C00D4BE03 /* EMMiscUtils.h */,
+				F595A31A1941602C00D4BE03 /* EMMiscUtils.m */,
 				F5CC5789191FF068001CD124 /* Services */,
 				F5B5E1E8193001090093DF83 /* EMConstants.h */,
 				F5B5E1E9193001090093DF83 /* EMConstants.m */,
 			);
-			name = Common;
-			path = ember/Common;
+			path = Common;
 			sourceTree = "<group>";
 		};
 		F5CC5789191FF068001CD124 /* Services */ = {
@@ -262,6 +295,8 @@
 			children = (
 				F5FAC54A191F12A30036BCB4 /* EMLoginManager.h */,
 				F5FAC54B191F12A30036BCB4 /* EMLoginManager.m */,
+				F520ABC91941243700FA0E86 /* EMLocalDataManager.h */,
+				F520ABCA1941243700FA0E86 /* EMLocalDataManager.m */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -277,6 +312,7 @@
 		F5FAC549191F102D0036BCB4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				F520ABC51941201B00FA0E86 /* LoginViewController */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -414,11 +450,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F520ABC81941207200FA0E86 /* EMLoginViewController.swift in Sources */,
 				F5A0D0EB191EDC1300138593 /* EMViewController.m in Sources */,
-				F5CC5783191FE25D001CD124 /* NSException+Utils.m in Sources */,
+				F595A31B1941602C00D4BE03 /* EMMiscUtils.m in Sources */,
+				F520ABDF1941376A00FA0E86 /* NSException+Utils.m in Sources */,
 				F5FAC54C191F12A30036BCB4 /* EMLoginManager.m in Sources */,
 				F5CC578C191FF068001CD124 /* EMService.m in Sources */,
+				F520ABE11941376A00FA0E86 /* NSUserDefaults+Utils.m in Sources */,
 				F5CC5798192006E1001CD124 /* EMLoginModelRequest.m in Sources */,
+				F520ABCB1941243700FA0E86 /* EMLocalDataManager.m in Sources */,
+				F520ABE01941376A00FA0E86 /* NSString+Utils.m in Sources */,
+				F520ABDE1941376A00FA0E86 /* NSData+Utils.m in Sources */,
 				F5B5E1EA193001090093DF83 /* EMConstants.m in Sources */,
 				F5A0D0E5191EDC1300138593 /* EMAppDelegate.m in Sources */,
 				F5A0D0E1191EDC1300138593 /* main.m in Sources */,
@@ -550,10 +592,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ember/ember-Prefix.pch";
 				INFOPLIST_FILE = "ember/ember-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ember/ViewControllers/LoginViewController/ember-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -564,10 +610,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ember/ember-Prefix.pch";
 				INFOPLIST_FILE = "ember/ember-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ember/ViewControllers/LoginViewController/ember-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

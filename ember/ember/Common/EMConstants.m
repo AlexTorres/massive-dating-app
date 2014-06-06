@@ -5,6 +5,8 @@
 //  Created by John A Torres B on 23/05/14.
 //  Copyright (c) 2014 ember. All rights reserved.
 //
+NSString *const kGUIDAlphabet = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+const NSUInteger kGUIDLength = 100;
 
 NSString *MTBaseServerUrl()
 {

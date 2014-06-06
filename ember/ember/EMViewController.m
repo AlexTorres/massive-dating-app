@@ -8,6 +8,12 @@
 
 #import "EMViewController.h"
 #import "EMLoginManager.h"
+#import "EMLocalDataManager.h"
+#import "ember-Bridging-Header.h"
+#import "ember-Swift.h"
+
+
+
 
 @interface EMViewController ()
 
@@ -18,15 +24,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    EMLoginManager * loginManager = [EMLoginManager sharedInstance];
     
-    NSString * dummy = [loginManager codeForPhone:@"573005548744"
-                                     withPassword:@"gatovolador"];
-    NSLog(@"%@",dummy);
+
+   
     
 	// Do any additional setup after loading the view, typically from a nib.
 }
-
+- (void)viewDidAppear:(BOOL)animated {
+    if ([EMLocalDataManager sharedInstance].userPassword && [EMLocalDataManager sharedInstance].userToken)
+    {
+        
+    } else {
+        [self performSegueWithIdentifier:@"gotoLogin" sender:self];
+    }
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
