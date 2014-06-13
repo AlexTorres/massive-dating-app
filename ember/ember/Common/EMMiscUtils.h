@@ -11,25 +11,9 @@
 @interface EMMiscUtils : NSObject
 
 + (NSString *)generateGUID;
-+ (NSString *)identifier;
++ (NSArray *) countryList;
 + (NSData *)encryptString:(NSString *)plaintext withKey:(NSString *)key;
 + (NSString *)decryptData:(NSData *)cipherText withKey:(NSString *)key;
++ (NSDictionary *) countryListFromPlist;
 + (NSString *)platform;
-+ (NSString *)deviceModel;
-+ (NSString *)deviceType;
-
-+ (void)askForPinIfRequiredWithWithTitle:(NSString*)title
-                                 message:(NSString*)message
-                                  footer:(NSString*)footer
-                         completionBlock:(void (^)(NSString *pin))completionBlock
-                             cancelBlock:(void(^)())cancelBlock;
-
-+ (void)askForPinIfRequiredWithCompletionBlock:(void (^)(NSString *pin))completionBlock;
-
-+ (void)askForPinIfRequiredWithCompletionBlock:(void (^)(NSString *pin))completionBlock cancelBlock:(void(^)())cancelBlock;
-
-+ (void)callCustomerRepresentative;
-
-+ (void)methodSwizzleWithClass:(Class)targetClass originalSelector:(SEL)originalSelector newSelector:(SEL)newSelector;
-
 @end

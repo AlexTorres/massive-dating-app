@@ -7,9 +7,13 @@
 //
 
 #import "EMMiscUtils.h"
+#import "EMLocalDataManager.h"
+#import "EMCountryModel.h"
 #include <sys/sysctl.h>
 #import <objc/runtime.h>
 #import <objc/message.h>
+#import <CoreTelephony/CTTelephonyNetworkInfo.h>
+#import <CoreTelephony/CTCarrier.h>
 
 @implementation EMMiscUtils
 
@@ -55,6 +59,52 @@
 + (NSString *)platform
 {
 	return [self getSysInfoByName:"hw.machine"];
+}
++ (NSArray *) countryList
+{
+    if([EMLocalDataManager sharedInstance].countryList) {
+        return [EMLocalDataManager sharedInstance].countryList;
+    } else {
+        
+        NSMutableArray *countries = [NSMutableArray arrayWithCapacity: [[NSLocale ISOCountryCodes] count]];
+        for (NSString *countryCode in [NSLocale ISOCountryCodes])
+        {
+            NSString *identifier = [NSLocale localeIdentifierFromComponents: [NSDictionary dictionaryWithObject: countryCode forKey: NSLocaleCountryCode]];
+            NSString *country = [[NSLocale currentLocale] displayNameForKey: NSLocaleIdentifier value: identifier];
+            EMCountryModel *countryModel = [EMCountryModel new];
+            countryModel.countryCode = countryCode;
+            countryModel.countryName = country;
+            [countries addObject: countryModel];
+        }
+        //[EMLocalDataManager sharedInstance].countryList = countries;
+        return countries;
+    }
+    
+}
+
++ (NSDictionary *) countryListFromPlist {
+    
+    if([EMLocalDataManager sharedInstance].countryPlist) {
+        return [EMLocalDataManager sharedInstance].countryPlist;
+    } else {
+        NSString *path = [[NSBundle mainBundle] pathForResource:
+                          @"Countries" ofType:@"plist"];
+        
+        NSDictionary *plist = [NSDictionary dictionaryWithContentsOfFile:path];
+        if (!plist) {
+            
+            [plist writeToFile:path atomically:YES];
+        }
+       // [EMLocalDataManager sharedInstance].countryPlist = plist;
+        return  plist;
+    }
+
+}
++ (NSString *)getActualConutry
+{
+    CTTelephonyNetworkInfo *info = [CTTelephonyNetworkInfo new];
+    CTCarrier *carrier = info.subscriberCellularProvider;
+    return carrier.mobileCountryCode;
 }
 
 

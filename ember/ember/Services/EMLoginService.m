@@ -13,7 +13,7 @@
 @implementation EMLoginService
 
 static NSString *const kSingUpPath = @"/v1/users/sign_up";
-
+static NSString *const kSingInPath = @"/v1/users/sign_in";
 + (instancetype)sharedInstance
 {
 	static dispatch_once_t once;
@@ -67,12 +67,16 @@ static NSString *const kSingUpPath = @"/v1/users/sign_up";
                                                keyPath:@"user"
                                                statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)]];
     
+    
 
 }
 - (void)cancelOperationsIfAny
 {
 	[self.objectManager cancelAllObjectRequestOperationsWithMethod:RKRequestMethodAny
 	                                           matchingPathPattern:kSingUpPath];
+    
+    [self.objectManager cancelAllObjectRequestOperationsWithMethod:RKRequestMethodAny
+                                               matchingPathPattern:kSingInPath];
 }
 
 #pragma mark - Public methods
@@ -100,6 +104,39 @@ static NSString *const kSingUpPath = @"/v1/users/sign_up";
     } failure: ^(RKObjectRequestOperation *operation, NSError *error) {
        
        // DDLogInfo(@"/%@ error: %@", kSingUpPath, [error localizedDescription]);
+        if (failureBlock) {
+            failureBlock(error);
+        }
+    }];
+    
+    [self.objectManager enqueueObjectRequestOperation:operation];
+    
+}
+#pragma mark - Public methods
+-(void) userSinginPhone:(NSString *)phone
+           withPassword:(NSString *)password
+                success:(EMServiceSuccessBlock)successBlock
+                failure:(EMServiceFailureBlock)failureBlock
+{
+    self.objectManager.requestSerializationMIMEType = RKMIMETypeJSON;
+    EMLoginModelRequest *loginModelRequest = [[EMLoginModelRequest alloc] init];
+    loginModelRequest.phone = phone;
+    loginModelRequest.password = password;
+    NSMutableURLRequest *request = [self.objectManager requestWithObject:loginModelRequest
+                                                                  method:RKRequestMethodGET
+                                                                    path:kSingInPath
+                                                              parameters:nil];
+    
+    // Make the request.
+    //DDLogInfo(@"Sending request to the /%@ API", kSingUpPath);
+    RKObjectRequestOperation *operation = [self.objectManager objectRequestOperationWithRequest:request success: ^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
+        if (successBlock) {
+            EMLoginModelResponse * objectResponse = mappingResult.firstObject;
+            successBlock(objectResponse);
+        }
+    } failure: ^(RKObjectRequestOperation *operation, NSError *error) {
+        
+        // DDLogInfo(@"/%@ error: %@", kSingUpPath, [error localizedDescription]);
         if (failureBlock) {
             failureBlock(error);
         }

@@ -10,6 +10,8 @@
 static NSString *const kUserPhone = @"EMUserPhone";
 static NSString *const kUserToken = @"EMUserToken";
 static NSString *const kUserPassword = @"EMUserPassword";
+static NSString *const kCountryList = @"EMCountryList";
+static NSString *const kCountryDictionary = @"EMCountryDictionary";
 
 @implementation EMLocalDataManager
 
@@ -70,5 +72,28 @@ static NSString *const kUserPassword = @"EMUserPassword";
 - (void)setUserPassword:(NSString *)GUID
 {
     [NSUserDefaults encryptAndSetString:GUID forKey:kUserPassword];
+}
+
+- (NSArray*)countryList
+{
+    NSData *encodedObject = [[NSUserDefaults standardUserDefaults] objectForKey:kCountryList];
+    return [NSKeyedUnarchiver unarchiveObjectWithData:encodedObject];
+}
+
+- (void)setCountryList:(NSArray *)countryList
+{
+    NSData *encodedObject = [NSKeyedArchiver archivedDataWithRootObject:countryList];
+    [NSUserDefaults setObject:encodedObject forKey:kCountryList];
+}
+- (NSDictionary*)countryPlist
+{
+    NSData *encodedObject = [[NSUserDefaults standardUserDefaults] objectForKey:kCountryDictionary];
+    return [NSKeyedUnarchiver unarchiveObjectWithData:encodedObject];
+}
+
+- (void)setCountryPlist:(NSDictionary *)countryPlist
+{
+    NSData *encodedObject = [NSKeyedArchiver archivedDataWithRootObject:countryPlist];
+    [NSUserDefaults setObject:encodedObject forKey:kCountryDictionary];
 }
 @end

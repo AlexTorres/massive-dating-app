@@ -9,59 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ember/Managers/EMLoginManager.m"
-            timestampString = "423117089.166848"
+            filePath = "ember/ViewControllers/EMSignUpViewController.swift"
+            timestampString = "424321423.202865"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "-codeForPhone:withPassword:"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__44-[EMLoginManager codeForPhone:withPassword:]_block_invoke"
-                  moduleName = "ember"
-                  urlString = "file:///Users/JohnTorres/git/massive-dating-app/ember/ember/Managers/EMLoginManager.m"
-                  timestampString = "423117772.071013"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "39"
-                  endingLineNumber = "39"
-                  offsetFromSymbolStart = "88">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__44-[EMLoginManager codeForPhone:withPassword:]_block_invoke_2"
-                  moduleName = "ember"
-                  urlString = "file:///Users/JohnTorres/git/massive-dating-app/ember/ember/Managers/EMLoginManager.m"
-                  timestampString = "423117772.072475"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "39"
-                  endingLineNumber = "39"
-                  offsetFromSymbolStart = "48">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ember/Managers/EMLoginManager.m"
-            timestampString = "423117089.166848"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "-codeForPhone:withPassword:"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "init(coder:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -71,13 +25,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ember/EMViewController.m"
-            timestampString = "423725235.234394"
+            filePath = "ember/Common/EMMiscUtils.m"
+            timestampString = "424277842.664234"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "+countryListFromPlist"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -87,59 +41,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ember/Services/EMLoginService.m"
-            timestampString = "423118103.248635"
+            filePath = "ember/ViewControllers/EMSignUpViewController.swift"
+            timestampString = "424321423.202865"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
-            landmarkName = "-userSingUpPhone:withPassword:success:failure:"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[EMLoginService userSingUpPhone:withPassword:success:failure:]"
-                  moduleName = "ember"
-                  urlString = "file:///Users/JohnTorres/git/massive-dating-app/ember/ember/Services/EMLoginService.m"
-                  timestampString = "423376126.2683"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "95"
-                  endingLineNumber = "95"
-                  offsetFromSymbolStart = "496">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__63-[EMLoginService userSingUpPhone:withPassword:success:failure:]_block_invoke"
-                  moduleName = "ember"
-                  urlString = "file:///Users/JohnTorres/git/massive-dating-app/ember/ember/Services/EMLoginService.m"
-                  timestampString = "423376126.268755"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "95"
-                  endingLineNumber = "95"
-                  offsetFromSymbolStart = "72">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ember/Services/EMLoginService.m"
-            timestampString = "423377156.546065"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
-            landmarkName = "-userSingUpPhone:withPassword:success:failure:"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "init(coder:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -149,13 +57,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ember/Services/EMLoginService.m"
-            timestampString = "423377156.546065"
+            filePath = "ember/ViewControllers/EMSignUpViewController.swift"
+            timestampString = "424321423.202865"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
-            landmarkName = "-userSingUpPhone:withPassword:success:failure:"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "init(coder:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -165,29 +73,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ember/ViewControllers/LoginViewController/EMLoginViewController.swift"
-            timestampString = "423725648.126136"
+            filePath = "ember/ViewControllers/CountrySelectorViewController/EMCountrySelectorViewController.swift"
+            timestampString = "424321423.202865"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "loginButtonTapped(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ember/ViewControllers/LoginViewController/EMLoginViewController.swift"
-            timestampString = "423725648.126136"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "loginButtonTapped(_:)"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "init(coder:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

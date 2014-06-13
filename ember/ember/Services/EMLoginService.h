@@ -16,4 +16,9 @@
                  success:(EMServiceSuccessBlock)successBlock
                  failure:(EMServiceFailureBlock)failureBlock;
 
+- (void) userSinginPhone:(NSString *)phone
+            withPassword:(NSString *)password
+                 success:(EMServiceSuccessBlock)successBlock
+                 failure:(EMServiceFailureBlock)failureBlock;
+
 @end

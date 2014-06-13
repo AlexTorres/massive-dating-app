@@ -7,10 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "EMManager.h"
 
-@interface EMLocalDataManager : NSObject
+@interface EMLocalDataManager : EMManager
 + (instancetype)sharedInstance;
 @property (nonatomic, weak) NSString *userPhone;
 @property (nonatomic, weak) NSString *userToken;
 @property (nonatomic, weak) NSString *userPassword;
+@property (nonatomic, weak) NSArray *countryList;
+@property (nonatomic, weak) NSDictionary *countryPlist;
 @end

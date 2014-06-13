@@ -7,10 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "EMManager.h"
 
-@interface EMLoginManager : NSObject
+@interface EMLoginManager : EMManager
 
 + (instancetype)sharedInstance;
-- (NSString *)codeForPhone:(NSString *)phone
-       withPassword:(NSString *)password;
+
+- (void)loginForPhone:(NSString *)phone
+         withPassword:(NSString *)password
+              success:(EMManagerSuccessBlock) successBlock
+              failure:(EMManagerFailureBlock) failureBlock;
+
+- (void)codeForPhone:(NSString *)phone
+        withPassword:(NSString *)password
+             success:(EMManagerSuccessBlock) successBlock
+             failure:(EMManagerFailureBlock) failureBlock;
 @end

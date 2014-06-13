@@ -26,7 +26,7 @@ class EMLoginViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         phoneTextField.delegate = self
         passwordTextfield.delegate = self
-        
+        self.navigationController.navigationBar.hidden = true
         // Do any additional setup after loading the view.
     }
     
@@ -47,11 +47,40 @@ class EMLoginViewController: UIViewController, UITextFieldDelegate {
         return false;
     }
     
-    @IBAction func loginButtonTapped(button:UIButton) {
+    @IBAction func loginButtonTapped(button:AnyObject) {
+       var loginManager = EMLoginManager.sharedInstance()
+        if(self.phoneTextField.text.bridgeToObjectiveC().length > 0 && self.passwordTextfield.text.bridgeToObjectiveC().length > 0) {
+            loginManager.loginForPhone(self.phoneTextField.text,
+                withPassword:self.passwordTextfield.text,
+                success: {(respose:AnyObject!) -> Void in println("gatooo")},
+                failure: {(error:NSError!) -> Void in
+                    var errorString = error.userInfo["NSLocalizedRecoverySuggestion"]  as NSString;
+
+                })
+           
+        }
+        self.checkFields();
+    }
+    @IBAction func forgotButtonTapped(button:AnyObject) {
         println("button tapped!")
     }
-    @IBAction func forgotButtonTapped(button:UIButton) {
-        println("button tapped!")
+    
+    func checkFields () {
+        for subview : AnyObject in self.view.subviews {
+            if(subview is UITextField) {
+                var textField = subview as UITextField;
+                var length = textField.text.bridgeToObjectiveC().length;
+                if (length == 0) {
+                    textField.layer.borderColor = UIColor.redColor().CGColor
+                    textField.layer.borderWidth = 1.0
+                    
+                } else {
+                    textField.layer.borderColor = UIColor.clearColor().CGColor
+                    textField.layer.borderWidth = 1.0
+                }
+            }
+        }
+    
     }
     /*
     // #pragma mark - Navigation

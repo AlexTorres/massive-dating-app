@@ -28,19 +28,37 @@
 }
 
 
-- (NSString *)codeForPhone:(NSString *)phone
-                 withPassword:(NSString *)password
-{
+- (void)codeForPhone:(NSString *)phone
+        withPassword:(NSString *)password
+             success:(EMManagerSuccessBlock) successBlock
+             failure:(EMManagerFailureBlock) failureBlock {
     
     [[EMLoginService sharedInstance] userSingUpPhone:phone
                                         withPassword:password
                                              success:^(id response) {
-                                                 NSLog(@"%@",response);
+                                                 successBlock(response);
         
     } failure:^(NSError *error) {
+        failureBlock(error);
         
     }];
-    return @"gato";
+}
+
+
+- (void)loginForPhone:(NSString *)phone
+        withPassword:(NSString *)password
+             success:(EMManagerSuccessBlock) successBlock
+             failure:(EMManagerFailureBlock) failureBlock {
+    
+    [[EMLoginService sharedInstance] userSinginPhone:phone
+                                        withPassword:password
+                                             success:^(id response) {
+                                                 successBlock(response);
+                                                 
+                                             } failure:^(NSError *error) {
+                                                 failureBlock(error);
+                                                 
+                                             }];
 }
 
 #pragma mark - Private methods
