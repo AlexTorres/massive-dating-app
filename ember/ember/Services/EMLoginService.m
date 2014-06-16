@@ -112,7 +112,7 @@ static NSString *const kSingInPath = @"/v1/users/sign_in";
     [self.objectManager enqueueObjectRequestOperation:operation];
     
 }
-#pragma mark - Public methods
+
 -(void) userSinginPhone:(NSString *)phone
            withPassword:(NSString *)password
                 success:(EMServiceSuccessBlock)successBlock

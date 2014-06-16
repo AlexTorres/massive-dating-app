@@ -9,14 +9,13 @@
 import UIKit
 
 class EMCountrySelectorViewController: UITableViewController {
+    var countriesModel : EMCountriesModelResponse
 
 
+ // Custom initialization
     
-    init(style: UITableViewStyle) {
-        super.init(style: style)
-        // Custom initialization
-    }
     init(coder aDecoder: NSCoder!) {
+        self.countriesModel  = EMCountriesModelResponse();
         super.init(coder: aDecoder);
     }
 
@@ -40,13 +39,19 @@ class EMCountrySelectorViewController: UITableViewController {
     override func numberOfSectionsInTableView(tableView: UITableView?) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView?, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 0
+        if(self.countriesModel.countries) {
+            return self.countriesModel.countries.count
+        } else {
+        
+         return 0
+        }
+        
     }
 
     /*

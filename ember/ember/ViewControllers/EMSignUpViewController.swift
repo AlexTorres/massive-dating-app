@@ -20,11 +20,13 @@ class EMSignUpViewController: UIViewController {
     var countries:EMCountryModel[]
     var countriesDictionary:NSDictionary
     var countrySelector:EMCountrySelectorViewController
+    var countriesModel : EMCountriesModelResponse
 
     
     init(coder aDecoder: NSCoder!) {
         self.countriesDictionary = EMMiscUtils.countryListFromPlist() as NSDictionary
         self.countries = EMMiscUtils.countryList() as EMCountryModel[];
+        self.countriesModel = EMCountriesModelResponse()
         let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil);
         self.countrySelector = storyboard.instantiateViewControllerWithIdentifier("CountrySelector") as EMCountrySelectorViewController
         super.init(coder: aDecoder)
@@ -35,8 +37,16 @@ class EMSignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        var countriesManager = EMCountriesManager.sharedInstance()
         self.addChildViewController(self.countrySelector);
         self.selectorContainer.addSubview(self.countrySelector.view);
+        countriesManager.countriesWithSuccess({(response:AnyObject!) -> Void in
+            self.countriesModel = response as EMCountriesModelResponse
+            println("gatooo")},
+            failure: {(error:NSError!) -> Void in
+            var errorString = error.userInfo["NSLocalizedRecoverySuggestion"]  as NSString;
+            });
+        
         //println(self.countriesDictionary)
         // Do any additional setup after loading the view.
     }

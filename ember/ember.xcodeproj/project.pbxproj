@@ -290,8 +290,11 @@
 		F5A0D100191EDC1300138593 /* emberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A0D0FF191EDC1300138593 /* emberTests.m */; };
 		F5A8FDB1194616E00042B856 /* EMSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A8FDB0194616E00042B856 /* EMSignUpViewController.swift */; };
 		F5A8FDB4194668450042B856 /* EMCountryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A8FDB3194668450042B856 /* EMCountryModel.m */; };
-		F5AB7443194AA7A3005E6FC2 /* EMCountryService.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AB7442194AA7A3005E6FC2 /* EMCountryService.m */; };
+		F5AB7443194AA7A3005E6FC2 /* EMCountriesService.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AB7442194AA7A3005E6FC2 /* EMCountriesService.m */; };
 		F5B5E1EA193001090093DF83 /* EMConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B5E1E9193001090093DF83 /* EMConstants.m */; };
+		F5BFAF60194B838B00E8ED76 /* EMCountryModelResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BFAF5F194B838B00E8ED76 /* EMCountryModelResponse.m */; };
+		F5BFAF63194B8ABC00E8ED76 /* EMCountriesModelResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BFAF62194B8ABC00E8ED76 /* EMCountriesModelResponse.m */; };
+		F5C77F71194E8A67004FA88B /* EMCountriesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C77F70194E8A67004FA88B /* EMCountriesManager.m */; };
 		F5CC578C191FF068001CD124 /* EMService.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CC578B191FF068001CD124 /* EMService.m */; };
 		F5CC578F191FF11A001CD124 /* EMLoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CC578E191FF11A001CD124 /* EMLoginService.m */; };
 		F5CC57921920005D001CD124 /* EMServiceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CC57911920005D001CD124 /* EMServiceModel.m */; };
@@ -611,10 +614,16 @@
 		F5A8FDB0194616E00042B856 /* EMSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMSignUpViewController.swift; sourceTree = "<group>"; };
 		F5A8FDB2194668440042B856 /* EMCountryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EMCountryModel.h; path = ../CountryModel/EMCountryModel.h; sourceTree = "<group>"; };
 		F5A8FDB3194668450042B856 /* EMCountryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EMCountryModel.m; path = ../CountryModel/EMCountryModel.m; sourceTree = "<group>"; };
-		F5AB7441194AA7A3005E6FC2 /* EMCountryService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCountryService.h; sourceTree = "<group>"; };
-		F5AB7442194AA7A3005E6FC2 /* EMCountryService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMCountryService.m; sourceTree = "<group>"; };
+		F5AB7441194AA7A3005E6FC2 /* EMCountriesService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCountriesService.h; sourceTree = "<group>"; };
+		F5AB7442194AA7A3005E6FC2 /* EMCountriesService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMCountriesService.m; sourceTree = "<group>"; };
 		F5B5E1E8193001090093DF83 /* EMConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMConstants.h; sourceTree = "<group>"; };
 		F5B5E1E9193001090093DF83 /* EMConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMConstants.m; sourceTree = "<group>"; };
+		F5BFAF5E194B838B00E8ED76 /* EMCountryModelResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EMCountryModelResponse.h; path = ember/Model/CountryModel/EMCountryModelResponse.h; sourceTree = SOURCE_ROOT; };
+		F5BFAF5F194B838B00E8ED76 /* EMCountryModelResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EMCountryModelResponse.m; path = ember/Model/CountryModel/EMCountryModelResponse.m; sourceTree = SOURCE_ROOT; };
+		F5BFAF61194B8ABC00E8ED76 /* EMCountriesModelResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EMCountriesModelResponse.h; path = ember/Model/CountryModel/EMCountriesModelResponse.h; sourceTree = SOURCE_ROOT; };
+		F5BFAF62194B8ABC00E8ED76 /* EMCountriesModelResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EMCountriesModelResponse.m; path = ember/Model/CountryModel/EMCountriesModelResponse.m; sourceTree = SOURCE_ROOT; };
+		F5C77F6F194E8A67004FA88B /* EMCountriesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCountriesManager.h; sourceTree = "<group>"; };
+		F5C77F70194E8A67004FA88B /* EMCountriesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMCountriesManager.m; sourceTree = "<group>"; };
 		F5CC578A191FF068001CD124 /* EMService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMService.h; sourceTree = "<group>"; };
 		F5CC578B191FF068001CD124 /* EMService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMService.m; sourceTree = "<group>"; };
 		F5CC578D191FF11A001CD124 /* EMLoginService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMLoginService.h; sourceTree = "<group>"; };
@@ -1081,6 +1090,10 @@
 			children = (
 				F5A8FDB2194668440042B856 /* EMCountryModel.h */,
 				F5A8FDB3194668450042B856 /* EMCountryModel.m */,
+				F5BFAF5E194B838B00E8ED76 /* EMCountryModelResponse.h */,
+				F5BFAF5F194B838B00E8ED76 /* EMCountryModelResponse.m */,
+				F5BFAF61194B8ABC00E8ED76 /* EMCountriesModelResponse.h */,
+				F5BFAF62194B8ABC00E8ED76 /* EMCountriesModelResponse.m */,
 			);
 			name = CountryModel;
 			sourceTree = "<group>";
@@ -1090,8 +1103,8 @@
 			children = (
 				F5CC578D191FF11A001CD124 /* EMLoginService.h */,
 				F5CC578E191FF11A001CD124 /* EMLoginService.m */,
-				F5AB7441194AA7A3005E6FC2 /* EMCountryService.h */,
-				F5AB7442194AA7A3005E6FC2 /* EMCountryService.m */,
+				F5AB7441194AA7A3005E6FC2 /* EMCountriesService.h */,
+				F5AB7442194AA7A3005E6FC2 /* EMCountriesService.m */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -1157,6 +1170,8 @@
 				F5FAC54B191F12A30036BCB4 /* EMLoginManager.m */,
 				F520ABC91941243700FA0E86 /* EMLocalDataManager.h */,
 				F520ABCA1941243700FA0E86 /* EMLocalDataManager.m */,
+				F5C77F6F194E8A67004FA88B /* EMCountriesManager.h */,
+				F5C77F70194E8A67004FA88B /* EMCountriesManager.m */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -1574,9 +1589,11 @@
 				F520ABDF1941376A00FA0E86 /* NSException+Utils.m in Sources */,
 				F5FAC54C191F12A30036BCB4 /* EMLoginManager.m in Sources */,
 				F5CC578C191FF068001CD124 /* EMService.m in Sources */,
+				F5BFAF60194B838B00E8ED76 /* EMCountryModelResponse.m in Sources */,
 				F520ABE11941376A00FA0E86 /* NSUserDefaults+Utils.m in Sources */,
 				F5CC5798192006E1001CD124 /* EMLoginModelRequest.m in Sources */,
 				F5605C741942540B0097C3A2 /* EMErrorManager.m in Sources */,
+				F5BFAF63194B8ABC00E8ED76 /* EMCountriesModelResponse.m in Sources */,
 				F520ABCB1941243700FA0E86 /* EMLocalDataManager.m in Sources */,
 				F5A8FDB1194616E00042B856 /* EMSignUpViewController.swift in Sources */,
 				F520ABE01941376A00FA0E86 /* NSString+Utils.m in Sources */,
@@ -1584,10 +1601,11 @@
 				F5B5E1EA193001090093DF83 /* EMConstants.m in Sources */,
 				F5A8FDB4194668450042B856 /* EMCountryModel.m in Sources */,
 				F5A0D0E5191EDC1300138593 /* EMAppDelegate.m in Sources */,
+				F5C77F71194E8A67004FA88B /* EMCountriesManager.m in Sources */,
 				F5A0D0E1191EDC1300138593 /* main.m in Sources */,
 				F5CC578F191FF11A001CD124 /* EMLoginService.m in Sources */,
 				F585D6171947B0650051D861 /* EMCountrySelectorViewController.swift in Sources */,
-				F5AB7443194AA7A3005E6FC2 /* EMCountryService.m in Sources */,
+				F5AB7443194AA7A3005E6FC2 /* EMCountriesService.m in Sources */,
 				F5CC579B19201DAD001CD124 /* EMLoginModelResponse.m in Sources */,
 				F5605C781942568E0097C3A2 /* EMManager.m in Sources */,
 				F5CC57921920005D001CD124 /* EMServiceModel.m in Sources */,
